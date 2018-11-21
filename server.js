@@ -7,7 +7,10 @@ app
   .use(express.static(path.join(__dirname, 'static')))
 
 app.get('/', (req, res) =>
-    res.sendFile(path.join(__dirname, './static/build', 'index.html')))
+    res.sendFile(path.join(__dirname, './static/', 'index.html')))
+
+app.get('/social-media', (req, res) =>
+    res.sendFile(path.join(__dirname, './static/', 'socialMedia.html')))
 
 // see abhi hum sirf index.html page render krwa rhe h isem ^^
 
