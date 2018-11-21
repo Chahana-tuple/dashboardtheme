@@ -1,0 +1,14 @@
+{
+  "name": "sing",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "start": "node server.js"
+  }
+}
