@@ -84,7 +84,7 @@ $(function () {
             let counter = 0;
 
             return $.plot(this.$chart, [{
-                label: "Light blue",
+                label: "Option",
                 data: data[0],
                 lines: {
                     show: true,
@@ -103,7 +103,7 @@ $(function () {
                 },
                 shadowSize: 0
             }, {
-                label: "RNS App",
+                label: "OptionA",
                 data: data[1],
                 dashes: {
                     show: true,
@@ -115,7 +115,7 @@ $(function () {
                 },
                 shadowSize: 0
             }, {
-                label: "sing App",
+                label: "optionB",
                 data: data[2],
                 lines: {
                     show: true,
@@ -437,3 +437,16 @@ function getMainChartData() {
 
     return [d1, d2, d3];
 }
+
+
+$(window).load(function() {
+    $('.post-module').hover(function() {
+      $(this).find('.description').stop().animate({
+        height: "toggle",
+        opacity: "toggle"
+      }, 300);
+    });
+  });
+
+
+
